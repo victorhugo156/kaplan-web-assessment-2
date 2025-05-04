@@ -1,0 +1,65 @@
+/* Reset all default margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set font to a more consistent base */
+body {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--base-text);
+  background-color: var(--background);
+}
+
+/* Make sure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove form input styles */
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Reset focus outline */
+:focus {
+  outline: none;
+}
+
+/* Normalize scrollbars */
+html {
+  scroll-behavior: smooth;
+}
