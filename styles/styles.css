@@ -38,7 +38,7 @@
     margin-top: 1rem;
 }
 
-.container-coffee-information span{
+.container-coffee-information > span{
     background-color: var(--yellow-light);
 
     width: 5rem;
@@ -60,6 +60,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 1rem;
 }
 
 .coffee-information h3{
@@ -76,12 +78,60 @@
 
 .container-shop-cart{
     width: 100%;
-    justify-content: space-between;
+
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-price{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.container-price span{
+    color: var(--base-label);
+    font-size: 0.875rem;
+
+    padding-right: 0.5rem;
+
+    margin-bottom: 0;
+}
+
+.container-shop-cart p{
+    font-family: "Baloo 2", sans-serif;
+    color: var(--base-text);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0;
 }
 
 .shop-cart-controls{
+    background-color: var(--base-button);
+
+    width: 4.5rem;
+    height: 2.375rem;
+
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+
+    border-radius: 4px;
+}
+
+.shop-cart-controls button{
+    background-color: aqua;
+    width: 0.875rem;
+    height: 0.875rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--purple);
 }
 
