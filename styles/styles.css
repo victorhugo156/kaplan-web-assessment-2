@@ -49,8 +49,8 @@
     align-items: center;
 
     color: var(--yellow-dark);
-    font-size: .7rem;
-    font-weight: bold;
+    font-size: var(--f-tag);
+    font-weight: var(--fw-bold);
 
     border-radius: .6rem;
 }
@@ -65,7 +65,7 @@
 }
 
 .coffee-information h3{
-    font-size: 1.25rem;
+    font-size: var(--fs-title-m);
     color: var(--base-subtile);
 }
 
@@ -73,7 +73,7 @@
     text-align: center;
 
     color: var(--base-label);
-    font-size: 0.87rem;
+    font-size: var(--fs-text-s);
 }
 
 .container-shop-cart{
@@ -82,6 +82,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 2rem;
 
 }
 
@@ -93,7 +95,7 @@
 
 .container-price span{
     color: var(--base-label);
-    font-size: 0.875rem;
+    font-size: var(--fs-text-s);
 
     padding-right: 0.5rem;
 
@@ -103,8 +105,8 @@
 .container-shop-cart p{
     font-family: "Baloo 2", sans-serif;
     color: var(--base-text);
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: var(--fs-title-m);
+    font-weight: var(--fw-extra-bold);
     margin-bottom: 0;
 }
 
@@ -124,7 +126,6 @@
 }
 
 .shop-cart-controls button{
-    background-color: aqua;
     width: 0.875rem;
     height: 0.875rem;
 
@@ -135,3 +136,35 @@
     color: var(--purple);
 }
 
+.ph-plus,
+.ph-minus{
+    font-size: var(--fs-text-m);
+    font-weight: var(--fw-extra-bold);
+}
+
+.shop-cart-controls p{
+    font-size: var(--fs-title-m);
+    font-weight: var(--fw-regular);
+
+    margin: 0 .1rem 0 .187rem;
+}
+
+.btn-shop-cart{
+    background-color: var(--purple-dark);
+
+    width: 2.375rem;
+    height: 2.375rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 8px;
+}
+
+.ph-shopping-cart-simple{
+    color: var(--background);
+    font-size: var(--fs-title-m);
+
+    
+}

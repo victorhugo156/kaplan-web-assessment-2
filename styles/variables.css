@@ -1,18 +1,43 @@
-:root{
-    --yellow-dark: #C47F17;
-    --yellow: #DBAC2C;
-    --yellow-light:#F1E9C9;
-    --purple-dark: #4B2995;
-    --purple: #8047F8;
-    --purple-light: #EBE5F9;
+:root {
+  --yellow-dark: #C47F17;
+  --yellow: #DBAC2C;
+  --yellow-light: #F1E9C9;
+  --purple-dark: #4B2995;
+  --purple: #8047F8;
+  --purple-light: #EBE5F9;
 
-    --base-title: #272221;
-    --base-subtile: #403937;
-    --base-text: #574F4D;
-    --base-label: #8D8686;
-    --base-hover: #D7D5D5;
-    --base-button: #E6E5E5;
-    --base-input: #EDEDED;
-    --base-card: #F3F2F2;
-    --background: #FAFAFA;
+  --base-title: #272221;
+  --base-subtile: #403937;
+  --base-text: #574F4D;
+  --base-label: #8D8686;
+  --base-hover: #D7D5D5;
+  --base-button: #E6E5E5;
+  --base-input: #EDEDED;
+  --base-card: #F3F2F2;
+  --background: #FAFAFA;
+
+  --ff-title: 'Baloo 2', cursive;
+  --ff-body: 'Roboto', sans-serif;
+
+  /* Titles */
+  --fs-title-xl: 3rem;
+  --fs-title-l: 2rem;
+  --fs-title-m: 1.5rem;
+  --fs-title-s: 1.25rem;
+  --fs-title-xs: 1.125rem;
+
+  /* Body text */
+  --fs-text-l: 1.25rem;
+  --fs-text-m: 1rem;
+  --fs-text-s: 0.875rem;
+  --fs-text-xs: 0.75rem;
+
+  --f-tag: 0.625rem;
+  --fs-btn-g: 0.875rem;
+  --fs-btn-m: 0.75rem;
+
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-regular: 400;
+
 }
