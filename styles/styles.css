@@ -1,7 +1,49 @@
+.wrapper{
+    max-width: 75rem;   
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.header-call-to-action{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-shop-cart-header{
+    background-color: var(--yellow-light);
+
+    width: 2.375rem;
+    height: 2.375rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 8px;
+}
+
+.btn-shop-cart-header .ph-shopping-cart-simple{
+    color: var(--yellow-dark);
+    font-size: var(--fs-title-m);
+}
 
 
 /*--------------Coffee Card----------------*/
+.container-coffee-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* How many columns in my grid*/
+    gap: 20px; /* space between the cards */
+    padding: 20px;
+}
 
 .coffee-card{
     background-color: var(--base-card);
@@ -165,6 +207,4 @@
 .ph-shopping-cart-simple{
     color: var(--background);
     font-size: var(--fs-title-m);
-
-    
 }
