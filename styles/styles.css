@@ -1,3 +1,7 @@
+.he{
+    margin-bottom: 4rem;
+}
+
 .wrapper{
     max-width: 75rem;   
     margin: 0 auto;
@@ -18,6 +22,19 @@
     gap: 2rem;
 }
 
+.header-call-to-action > h1{
+    font-size: var(--fs-title-xl);
+    color: var(--base-title);
+
+    line-height: 20%;
+}
+
+.header-call-to-action > a{
+    font-size: var(--fs-title-s);
+    color: var(--base-subtile);
+    font-weight: var(--fw-bold);
+}
+
 .btn-shop-cart-header{
     background-color: var(--yellow-light);
 
@@ -29,11 +46,64 @@
     align-items: center;
     
     border-radius: 8px;
+
+    cursor: pointer;
 }
 
 .btn-shop-cart-header .ph-shopping-cart-simple{
     color: var(--yellow-dark);
     font-size: var(--fs-title-m);
+}
+
+.container-banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-banner-information{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-slogan{
+    margin-bottom: 3rem;
+}
+
+.slogan{
+    width: 90%;
+    line-height: 190%;
+
+    padding: 3rem 0;
+}
+
+.container-slogan p{
+    font-size: var(--fs-text-l);
+    font-weight: var(--fw-regular);
+}
+
+.container-benefits{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.container-benefits div{
+    display: flex;
+}
+
+.benefits{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    padding: .5rem 0;
+}
+
+.benefits p{
+    font-size: var(--fs-text-m);
+    font-weight: var(--fw-regular);
 }
 
 
