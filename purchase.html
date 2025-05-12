@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/purchase.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Delivery</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div data-include="header.html"></div>
+
+    <main>
+        <div class="container-form">
+            <h2>Review your order</h2>
+            <form method="post" action="">
+                <div class="container-deliver-address">
+                    <i class="ph ph-map-pin-line"></i>
+                    <p>Delivery Address <br> <span>Type the delivery address</span></p>
+                </div>
+
+                <fieldset>
+                    <div class="input-wrapper">
+                        <label for="post-code">Post Code</label>
+                        <input id="name" name="post-code" type="text" placeholder="post code" required>
+                    </div>
+
+                    <div class="input-wrapper flex-1">
+                        <label for="street">Street</label>
+                        <input id="email" name="street" type="text" required placeholder="street">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-wrapper flex-number">
+                            <label for="">Number</label>
+                            <input id="number" name="number" type="number" required>
+                        </div>
+
+                        <div class="input-wrapper flex-unit">
+                            <label for="">Unit</label>
+                            <input id="unit" name="unit" type="text" placeholder="optional">
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-wrapper flex-1">
+                            <label for="suburb">Suburb</label>
+                            <input id="suburb" name="suburb" type="text" placeholder="suburb" required>
+                        </div>
+                        <div class="input-wrapper flex-2">
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" placeholder="city" required>
+                        </div>
+                        <div class="input-wrapper flex-3">
+                            <label for="state">State</label>
+                            <input id="state" name="state" type="text" placeholder="nsw" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="container-payment-method">
+                <div class="header-payment-method">
+                    <i class="ph ph-currency-dollar"></i>
+                    <p>Payment <span>Choose the payment method</span></p>
+                </div>
+
+                <div class="payment-method">
+                    <div class="tag-payment">
+                        <i class="ph ph-credit-card"></i>
+                        <p>Credit Card</p>
+                    </div>
+
+                    <div class="tag-payment">
+                        <i class="ph ph-currency-btc"></i>
+                        <p>Bit Coin</p>
+                    </div>
+
+                    <div class="tag-payment">
+                        <i class="ph ph-money"></i>
+                        <p>Cash</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="checkout">
+            <h2>Coffees Selected</h2>
+            <ul>
+                <li>
+                    <img src="./imgs/expresso_americano.png" alt="">
+                    <div>
+                        <div class="header-title">
+                            <h3>Traditional Express</h3>
+                            <p>US$ 9.90</p>
+                        </div>
+
+                        <div class="controls">
+                            <div class="shop-cart-controls">
+                                <button><i class="ph ph-minus"></i></button>
+                                <p><span id="checkout-qty">-</span></p>
+                                <button><i class="ph ph-plus"></i></button>
+                            </div>
+                            <div class="container-tag-remove">
+                                <button><i class="ph ph-trash"></i>DELETE</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="checkout-price">
+                <div class="price">
+                    <p>Coffee Price</p>
+                    <span class="currency">AU$</span>
+                    <span class="amount" id="checkout-total">-</span>
+                    <!--<p><span id="checkout-total">-</span></p>-->
+                </div>
+                <div class="fee-delivery">
+                    <p>Delivery Fee</p>
+                    <span class="currency">AU$</span>
+                    <p>3.50</p>
+                </div>
+                <div class="total-price">
+                    <h3>TOTAL</h3>
+                    <span class="currency">AU$</span>
+                    <span class="amount" id="checkout-total-purchase">-</span>
+                    <!--<h3>AU$ <span id="checkout-total-purchase">-</span></h3>-->
+                </div>
+            </div>
+
+            <div class="btn-confirm-order">
+                <button>CONFIRM ORDER</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="footer.html"></div>
+
+    <script src="./script.js"></script>
+    <script src="./scrip_purchase.js"></script>
+</body>
+
+</html>

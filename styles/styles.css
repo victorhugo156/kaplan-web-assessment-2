@@ -1,11 +1,24 @@
-.he{
-    margin-bottom: 4rem;
+
+html, body{
+    height: 100%;
+
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper{
     max-width: 75rem;   
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+.logo{
+    width: 10rem;
+
 }
 
 .header-wrapper{
@@ -106,13 +119,20 @@
     font-weight: var(--fw-regular);
 }
 
+main{
+flex: 1;    
+}
 
+main h2{
+    padding-top: 3rem;
+}
 /*--------------Coffee Card----------------*/
 .container-coffee-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* How many columns in my grid*/
-    gap: 20px; /* space between the cards */
-    padding: 20px;
+    gap: 3rem; /* space between the cards */
+
+    padding: 5rem 0;
 }
 
 .coffee-card{
@@ -252,6 +272,8 @@
 .ph-minus{
     font-size: var(--fs-text-m);
     font-weight: var(--fw-extra-bold);
+
+    cursor: pointer;
 }
 
 .shop-cart-controls p{
@@ -272,9 +294,23 @@
     align-items: center;
     
     border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.btn-shop-cart:hover{
+    background-color: var(--yellow-dark);
 }
 
 .ph-shopping-cart-simple{
     color: var(--background);
     font-size: var(--fs-title-m);
+}
+
+/*-------------------------------------------------------*/
+
+footer{
+    background-color: var(--base-title);
+    height: 15rem;
+
 }

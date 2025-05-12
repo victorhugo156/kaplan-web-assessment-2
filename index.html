@@ -20,50 +20,9 @@
 </head>
 
 <body>
-    <header class="wrapper he">
-        <div class="header-wrapper">
-            <img src="./imgs/Logo.png" alt="Coffee Delivery Logo">
-            <div class="header-call-to-action">
-                <a href="#">contact us</a>
-                <button class="btn-shop-cart-header"><i class="ph ph-shopping-cart-simple"></i></button>
-            </div>
-        </div>
-
-            <div class="container-banner">
-                <div class="container-banner-information">
-                    <div class="container-slogan">
-                        <div class="slogan">
-                            <h1>The perfect coffee for anytime of the day</h1>
-                        </div>
-                        <p>Coffee Delivery will deliver your coffee at anytime, anywhere!</p>
-                    </div>
-                    <div class="container-benefits">
-                        <div class="benefits">
-                            <span><img src="./imgs/Icon-cart.png" alt=""></span>
-                            <p>Easy purchase and safe</p>
-                        </div>
-
-                        <div class="benefits">
-                            <span><img src="./imgs/Icon-package.png" alt=""></span>
-                            <p>Strong cups keeping the coffee intact</p>
-                        </div>
-
-                        <div class="benefits">
-                            <span><img src="./imgs/Icon-timer.png" alt=""></span>
-                            <p>Fast delivery and trackable</p>
-                        </div>
-
-                        <div class="benefits">
-                            <span><img src="./imgs/Icon-hot.png" alt=""></span>
-                            <p>Your coffee arrives warm, ready to drink!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="./imgs/coffee_banner.png" alt="Image of a Delivery Coffee Cup">
-            </div>
-    </header>
-
+    <!-- HEADER -->
+  <div data-include="header.html"></div>
+  
     <main class="wrapper">
         <h2>Our Coffees</h2>
         <div class="container-coffee-list">
@@ -87,7 +46,33 @@
                                 <p>1</p>
                                 <button><i class="ph ph-plus"></i></button>
                             </div>
-                            <button class="btn-shop-cart"><i class="ph ph-shopping-cart-simple"></i></button>
+                            <a href="./purchase.html" class="btn-shop-cart"><i class="ph ph-shopping-cart-simple"></i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="coffee-card">
+                <li class="container-coffee-information">
+                    <img src="./imgs/expresso_traditional.png" alt="Image of the Traditional Coffee Expresso">
+                    <span>Traditional</span>
+
+                    <div class="coffee-information">
+                        <h3>Traditional Expresso</h3>
+                        <p>The traditional coffee made with hot water and ground grans</p>
+
+                        <div class="container-shop-cart">
+                            <div class="container-price">
+                                <span>AU$</span>
+                                <p> 9.90</p>
+                            </div>
+
+                            <div class="shop-cart-controls">
+                                <button><i class="ph ph-minus"></i></button>
+                                <p>1</p>
+                                <button><i class="ph ph-plus"></i></button>
+                            </div>
+                            <a href="./purchase.html" class="btn-shop-cart"><i class="ph ph-shopping-cart-simple"></i></a>
                         </div>
                     </div>
                 </li>
@@ -157,33 +142,7 @@
                         <div class="container-shop-cart">
                             <div class="container-price">
                                 <span>AU$</span>
-                                <p> 9.90</p>
-                            </div>
-
-                            <div class="shop-cart-controls">
-                                <button><i class="ph ph-minus"></i></button>
-                                <p>1</p>
-                                <button><i class="ph ph-plus"></i></button>
-                            </div>
-                            <button class="btn-shop-cart"><i class="ph ph-shopping-cart-simple"></i></button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="coffee-card">
-                <li class="container-coffee-information">
-                    <img src="./imgs/expresso_traditional.png" alt="Image of the Traditional Coffee Expresso">
-                    <span>Traditional</span>
-
-                    <div class="coffee-information">
-                        <h3>Traditional Expresso</h3>
-                        <p>The traditional coffee made with hot water and ground grans</p>
-
-                        <div class="container-shop-cart">
-                            <div class="container-price">
-                                <span>AU$</span>
-                                <p> 9.90</p>
+                                <p>9.90</p>
                             </div>
 
                             <div class="shop-cart-controls">
@@ -276,6 +235,10 @@
             </ul>
         </div>
     </main>
-</body>
 
+    <!-- FOOTER -->
+  <div data-include="footer.html"></div>
+  
+  <script src="./script.js"></script>
+</body>
 </html>

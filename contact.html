@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Delivery</title>
+</head>
+
+<body>
+        <!-- HEADER -->
+  <div data-include="header.html"></div>
+
+    <main>
+        <form method="post" action="">
+            <fieldset>
+                <legend>Hit us Hup!</legend>
+                <div class="input-wrapper">
+                    <label for="name">Name</label>
+                    <input 
+                    id="name" 
+                    name="name"
+                    type="text" 
+                    placeholder="type your name"
+                    required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input 
+                    id="email" 
+                    name="email"
+                    type="email"
+                    required>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="">Inquire</label>
+                    <select name="inquire" id="inquire" required>
+                        <option value="product">Product</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="payment">Payment</option>
+                        
+                    </select>
+                </div>
+
+                <div class="textarea-wrapper">
+                    <label for="text-inquire"></label>
+                    <textarea 
+                    name="text-inquire" 
+                    id="text-inquire" 
+                    cols="30" 
+                    rows="10"
+                    placeholder="Type your inquires"
+                    required
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <div class="btn-wrapper">
+                <button type="submit" class="btnsend">Send</button>
+            </div>
+        </form>
+    </main>
+
+        <!-- FOOTER -->
+  <div data-include="footer.html"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+main{
+    width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background-color: var(--base-card);
+
+    flex-direction: column;
+
+    width: 80%;
+
+    margin: 3rem 0;
+
+    display: flex;
+    align-items: center;
+
+
+    padding: 3rem;
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+legend{
+    font: var(--ff-title);
+    font-size: var(--fs-title-l);
+    font-weight: var(--fw-bold);
+
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper,
+.select-wrapper,
+.textarea-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+input, 
+textarea, 
+select{
+    background-color: var(--base-input);
+
+    width: 80%;
+
+    border-radius: 8px;
+    border: 1px solid var(--base-button);
+
+    padding: .75rem 1rem;
+
+    font: var(--ff-body);
+    font-size: var(--fs-text-s);
+}
+
+label{
+    font: var(--ff-title);
+    font-size: var(--fs-text-l);
+    color: var(--base-title);
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:.25rem solid var(--yellow-light);
+    border: .125rem solid var(--yellow);
+
+    outline-offset: .1px;/*Border for Safari Browser*/
+}
+
+.btn-wrapper{
+    width: 100%;
+    padding: 3rem 0;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+button{
+    background-color: var(--yellow);
+
+    font-size: var(--fs-btn-g);
+    color: white;
+
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
