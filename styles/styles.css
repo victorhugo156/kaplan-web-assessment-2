@@ -1,27 +1,31 @@
-
-html, body{
+html,
+body {
     height: 100%;
 
     margin: 0;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-.wrapper{
-    max-width: 75rem;   
+main{
+    margin-bottom: 3rem;
+}
+
+.wrapper {
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.logo{
+.logo {
     width: 10rem;
 
 }
 
-.header-wrapper{
+.header-wrapper {
     display: flex;
     justify-content: space-between;
 
@@ -29,26 +33,59 @@ body{
     padding-bottom: 3rem;
 }
 
-.header-call-to-action{
+.header-call-to-action {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.header-call-to-action > h1{
-    font-size: var(--fs-title-xl);
-    color: var(--base-title);
 
-    line-height: 20%;
+/* ---Styles to hide hamburger menu in desktop size---- */
+.my-bag-desktop {
+    display: block;
 }
 
-.header-call-to-action > a{
+.btn-hamburger {
+    display: none;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    max-width: 16rem;
+    height: 100vh;
+    background: var(--background);
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 50;
+}
+
+/* when active, JS will add the class open */
+.main-nav.open {
+    transform: translateX(0);
+}
+
+.main-nav a {
+    color: var(--base-title);
     font-size: var(--fs-title-s);
+    text-decoration: none;
+}
+
+/* Default desktop header-call links */
+.header-call-to-action>a p {
+    margin: 0;
+    font-size: var(--fs-title-m);
     color: var(--base-subtile);
     font-weight: var(--fw-bold);
 }
 
-.btn-shop-cart-header{
+.btn-shop-cart-header {
     background-color: var(--yellow-light);
 
     width: 2.375rem;
@@ -57,56 +94,57 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 8px;
 
     cursor: pointer;
 }
 
-.btn-shop-cart-header .ph-shopping-cart-simple{
+.btn-shop-cart-header .ph-shopping-cart-simple {
     color: var(--yellow-dark);
     font-size: var(--fs-title-m);
 }
 
-.container-banner{
+
+.container-banner {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.container-banner-information{
+.container-banner-information {
     width: 55%;
     display: flex;
     flex-direction: column;
 }
 
-.container-slogan{
+.container-slogan {
     margin-bottom: 3rem;
 }
 
-.slogan{
+.slogan {
     width: 90%;
     line-height: 190%;
 
     padding: 3rem 0;
 }
 
-.container-slogan p{
+.container-slogan p {
     font-size: var(--fs-text-l);
     font-weight: var(--fw-regular);
 }
 
-.container-benefits{
+.container-benefits {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.container-benefits div{
+.container-benefits div {
     display: flex;
 }
 
-.benefits{
+.benefits {
     display: flex;
     align-items: center;
     gap: 1.25rem;
@@ -114,28 +152,29 @@ body{
     padding: .5rem 0;
 }
 
-.benefits p{
+.benefits p {
     font-size: var(--fs-text-m);
     font-weight: var(--fw-regular);
 }
 
-main{
-flex: 1;    
+main {
+    flex: 1;
 }
 
-main h2{
+main h2 {
     padding-top: 3rem;
 }
+
 /*--------------Coffee Card----------------*/
-.container-coffee-list{
+.container-coffee-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* How many columns in my grid*/
-    gap: 3rem; /* space between the cards */
+    gap: 3rem;/* space between the cards */
 
     padding: 5rem 0;
 }
 
-.coffee-card{
+.coffee-card {
     background-color: var(--base-card);
 
     width: 16rem;
@@ -150,7 +189,7 @@ main h2{
     border-radius: 15px 50px;
 }
 
-.coffee-card img{
+.coffee-card img {
     width: 7.5rem;
     height: auto;
 
@@ -161,7 +200,7 @@ main h2{
 
 }
 
-.container-coffee-information{
+.container-coffee-information {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +209,7 @@ main h2{
     margin-top: 1rem;
 }
 
-.container-coffee-information > span{
+.container-coffee-information>span {
     background-color: var(--yellow-light);
 
     width: 5rem;
@@ -187,7 +226,7 @@ main h2{
     border-radius: .6rem;
 }
 
-.coffee-information{
+.coffee-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,19 +235,19 @@ main h2{
     padding: 1rem;
 }
 
-.coffee-information h3{
+.coffee-information h3 {
     font-size: var(--fs-title-m);
     color: var(--base-subtile);
 }
 
-.coffee-information p{
+.coffee-information p {
     text-align: center;
 
     color: var(--base-label);
     font-size: var(--fs-text-s);
 }
 
-.container-shop-cart{
+.container-shop-cart {
     width: 100%;
 
     display: flex;
@@ -219,13 +258,13 @@ main h2{
 
 }
 
-.container-price{
+.container-price {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-.container-price span{
+.container-price span {
     color: var(--base-label);
     font-size: var(--fs-text-s);
 
@@ -234,7 +273,7 @@ main h2{
     margin-bottom: 0;
 }
 
-.container-shop-cart p{
+.container-shop-cart p {
     font-family: "Baloo 2", sans-serif;
     color: var(--base-text);
     font-size: var(--fs-title-m);
@@ -242,7 +281,7 @@ main h2{
     margin-bottom: 0;
 }
 
-.shop-cart-controls{
+.shop-cart-controls {
     background-color: var(--base-button);
 
     width: 4.5rem;
@@ -257,33 +296,33 @@ main h2{
     border-radius: 4px;
 }
 
-.shop-cart-controls button{
+.shop-cart-controls button {
     width: 0.875rem;
     height: 0.875rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: var(--purple);
 }
 
 .ph-plus,
-.ph-minus{
+.ph-minus {
     font-size: var(--fs-text-m);
     font-weight: var(--fw-extra-bold);
 
     cursor: pointer;
 }
 
-.shop-cart-controls p{
+.shop-cart-controls p {
     font-size: var(--fs-title-m);
     font-weight: var(--fw-regular);
 
     margin: 0 .1rem 0 .187rem;
 }
 
-.btn-shop-cart{
+.btn-shop-cart {
     background-color: var(--purple-dark);
 
     width: 2.375rem;
@@ -292,24 +331,24 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 8px;
 
     cursor: pointer;
 }
 
-.btn-shop-cart:hover{
+.btn-shop-cart:hover {
     background-color: var(--yellow-dark);
 }
 
-.ph-shopping-cart-simple{
+.ph-shopping-cart-simple {
     color: var(--background);
     font-size: var(--fs-title-m);
 }
 
 /*-------------------------------------------------------*/
 
-footer{
+footer {
     background-color: var(--base-title);
     height: 15rem;
 
@@ -317,25 +356,132 @@ footer{
 
 
 /*------ Responsive: Tablet ------*/
-@media (max-width: 1024px) {
-    .container-banner { flex-direction: column; text-align: center; }
-    .container-banner-information { width: 100%; }
-    .container-banner img { width: 80%; margin: 2rem auto; }
-    .container-benefits { grid-template-columns: 1fr; gap: 1.5rem; }
-    .container-coffee-list { grid-template-columns: repeat(2, 1fr); gap: 2rem; padding: 3rem 0; }
-  }
-  
-  /*------ Responsive: Mobile ------*/
-  @media (max-width: 600px) {
-    .header-wrapper { flex-direction: column; align-items: center; gap: 1.5rem; }
-    .header-call-to-action { flex-direction: column; gap: 1rem; }
-    .logo { width: 8rem; }
-    main h2 { font-size: var(--fs-title-s); }
-    .container-banner { flex-direction: column; }
-    .container-banner img { width: 100%; }
-    .container-benefits { grid-template-columns: 1fr; }
-    .container-coffee-list { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 0; }
-    .coffee-card { width: 100%; height: auto; padding-top: 4rem; }
-    .coffee-card img { top: -1.5rem; width: 6rem; }
-    .wrapper { padding: 0 1rem; }
-  }
+/* Responsive: Tablet */
+@media (max-width:1024px) {
+    /* Make banner a grid so image moves between slogan/benefits */
+    .container-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "slogan"
+            "image"
+            "benefits";
+        text-align: center;
+        gap:2rem;
+    }
+    .container-banner-information{
+        width: 100%;
+    }
+    .container-slogan { 
+        grid-area: slogan; 
+    }
+    .container-banner img {
+        grid-area: image;
+        width:80%;
+        justify-self:center;
+        margin: 0;
+    }
+    .container-benefits { grid-area: benefits; }
+
+    /* coffee cards: two columns */
+    .container-coffee-list{
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+        padding:3rem 0;
+    }
+}
+
+
+/*------ Responsive: Mobile ------*/
+@media (max-width: 600px) {
+
+    /* header layout */
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        padding-bottom: 1rem;
+    }
+
+    /* show hamburger, hide desktop cart */
+    .btn-hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: var(--fs-title-m);
+        cursor: pointer;
+    }
+
+    .my-bag-desktop {
+        display: none;
+    }
+
+    .header-call-to-action {
+        display: none;
+    }
+
+    /* mobile nav bag item: show text, hide icon */
+    .main-nav .my-bag p {
+        display: block;
+    }
+
+    .main-nav .my-bag .ph-shopping-cart-simple {
+        display: none;
+    }
+
+
+    .logo {
+        width: 8rem;
+    }
+
+    main h2 {
+        font-size: var(--fs-title-s);
+    }
+
+    .container-banner {
+        flex-direction: column;
+    }
+    .container-slogan{
+        margin-bottom: 1rem;
+    }
+
+    .container-slogan p{
+        display: none;
+    }
+
+    .container-banner img {
+        width: 100%;
+    }
+
+    .benefits img{
+        margin: 0;
+    }
+
+    .container-benefits {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .container-coffee-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .coffee-card {
+        width: 100%;
+        height: auto;
+        padding-top: 4rem;
+    }
+
+    .coffee-card img {
+        top: -1.5rem;
+        width: 6rem;
+    }
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+}

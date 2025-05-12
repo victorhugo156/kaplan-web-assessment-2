@@ -102,13 +102,14 @@
 
         <div class="checkout">
             <h2>Coffees Selected</h2>
-            <ul>
+            <ul class="checkout-summary">
                 <li>
                     <img src="./imgs/expresso_americano.png" alt="">
                     <div>
                         <div class="header-title">
                             <h3>Traditional Express</h3>
-                            <p>US$ 9.90</p>
+                            <span>AU$</span>
+                            <p id="coffee-base-price">9.90</p>
                         </div>
 
                         <div class="controls">
@@ -127,26 +128,34 @@
             <div class="checkout-price">
                 <div class="price">
                     <p>Coffee Price</p>
-                    <span class="currency">AU$</span>
-                    <span class="amount" id="checkout-total">-</span>
-                    <!--<p><span id="checkout-total">-</span></p>-->
+                    <div>
+                        <span class="currency">AU$</span>
+                        <span class="amount" id="checkout-total">-</span>
+                    </div>
                 </div>
                 <div class="fee-delivery">
                     <p>Delivery Fee</p>
-                    <span class="currency">AU$</span>
-                    <p>3.50</p>
+                    <div>
+                        <span class="currency">AU$</span>
+                        <p>3.50</p>
+                    </div>
                 </div>
                 <div class="total-price">
                     <h3>TOTAL</h3>
-                    <span class="currency">AU$</span>
-                    <span class="amount" id="checkout-total-purchase">-</span>
-                    <!--<h3>AU$ <span id="checkout-total-purchase">-</span></h3>-->
+                    <div>
+                        <span class="currency">AU$</span>
+                        <span class="amount" id="checkout-total-purchase">-</span>
+                    </div>
+                </div>
+
+                <div class="btn-confirm-order">
+                    <a href="order-placed.html" target="_blank">
+                        <button>CONFIRM ORDER</button>
+                    </a> 
                 </div>
             </div>
 
-            <div class="btn-confirm-order">
-                <button>CONFIRM ORDER</button>
-            </div>
+
         </div>
     </main>
 
