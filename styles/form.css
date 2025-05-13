@@ -139,7 +139,7 @@ button {
 }
 
 
-/* Tablet & below (up to 1024px) */
+/*-------- Tablet & below (up to 1024px)---------- */
 @media (max-width: 1024px) {
 
     /* header layout */
@@ -172,7 +172,7 @@ button {
     }
 }
 
-/* Mobile & below (up to 600px) */
+/*------------ Mobile & below (up to 600px) -------------- */
 @media (max-width: 600px) {
 
     /* header layout */

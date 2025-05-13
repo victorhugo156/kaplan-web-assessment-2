@@ -235,6 +235,11 @@ main h2 {
     padding: 1rem;
 }
 
+.coffee-information a p{
+    font-size: var(--fs-text-s);
+    color: var(--purple);
+}
+
 .coffee-information h3 {
     font-size: var(--fs-title-m);
     color: var(--base-subtile);
@@ -356,9 +361,9 @@ footer {
 
 
 /*------ Responsive: Tablet ------*/
-/* Responsive: Tablet */
+
 @media (max-width:1024px) {
-    /* Make banner a grid so image moves between slogan/benefits */
+
     .container-banner {
         display: grid;
         grid-template-columns: 1fr;
@@ -394,6 +399,7 @@ footer {
 
 
 /*------ Responsive: Mobile ------*/
+
 @media (max-width: 600px) {
 
     /* header layout */

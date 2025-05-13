@@ -299,7 +299,7 @@ input:focus{
 
 
 
-/********** Responsive: Tablet **********/
+/*--------------- Responsive: Tablet ------------*/
 @media (max-width: 1024px) {
     main{
         flex-direction: column;
@@ -332,7 +332,7 @@ input:focus{
     .tag-payment{ flex: 1 1 45%; }
 }
 
-/********** Responsive: Mobile **********/
+/*---------- Responsive: Mobile --------------*/
 @media (max-width: 600px) {
 
     main{
