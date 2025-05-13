@@ -11,7 +11,6 @@ body {
 }
 
 .wrapper {
-
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -28,15 +27,16 @@ header nav{
 .logo {
     width: 10rem;
 }
-
+main{
+    height: 100vh;
+}
 
 section.wrapper{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-    margin-top: 15rem;
+    justify-content: center;
 }
 
 .wrapper-information{
@@ -116,3 +116,77 @@ section.wrapper{
     color: var(--base-text);
     font-weight: var(--fw-regular);
 }
+
+@media (max-width: 1024px) {
+    section.wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;       /* bring it up a bit */
+      gap: 2rem;              /* space between the two blocks */
+    }
+  
+    .wrapper-information {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .wrapper-information h1 {
+      font-size: var(--fs-title-l);  /* a bit smaller */
+      line-height: 1.2;
+    }
+  
+    .wrapper-information p {
+      font-size: var(--fs-text-l);
+    }
+  
+    .wrapper-delivery-info {
+      padding-left: 0;        /* drop the left padding */
+      width: 90%;
+      max-width: 30rem;
+      margin: 1rem auto 0;
+    }
+  
+    .wrapper-image img {
+      width: 80%;
+      max-width: 25rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header nav {
+      text-align: center;     /* center your logo */
+      padding: 1.5rem 0;
+    }
+  
+    .logo {
+      width: 6rem;            /* shrink the logo */
+    }
+  
+    section.wrapper {
+      margin-top: 2.5rem;
+      padding: 0 1rem;        /* give some side-padding */
+    }
+  
+    .wrapper-information h1 {
+      font-size: var(--fs-title-m);
+    }
+    .wrapper-information p {
+      font-size: var(--fs-text-m);
+    }
+  
+    .wrapper-delivery-info {
+      gap: 0.75rem;
+      padding: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .wrapper-delivery-info .flex p {
+      font-size: var(--fs-text-s);
+    }
+  
+    .wrapper-image img {
+      width: 100%;
+      max-width: none;
+    }
+  }

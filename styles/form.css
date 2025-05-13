@@ -1,5 +1,4 @@
-
-main{
+main {
     width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -8,7 +7,46 @@ main{
     justify-content: center;
 }
 
-form{
+/* ---Styles to hide hamburger menu in desktop size---- */
+.my-bag-desktop {
+    display: block;
+}
+
+.btn-hamburger {
+    display: none;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    max-width: 16rem;
+    height: 100vh;
+    background: var(--background);
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 50;
+}
+
+/* when active, JS will add the class open */
+.main-nav.open {
+    transform: translateX(0);
+}
+
+.main-nav a {
+    color: var(--base-title);
+    font-size: var(--fs-title-s);
+    text-decoration: none;
+}
+
+/*----------------------------------------*/
+
+form {
     background-color: var(--base-card);
 
     flex-direction: column;
@@ -20,11 +58,10 @@ form{
     display: flex;
     align-items: center;
 
-
     padding: 3rem;
 }
 
-fieldset{
+fieldset {
     width: 100%;
     border: none;
 
@@ -34,7 +71,7 @@ fieldset{
 
 }
 
-legend{
+legend {
     font: var(--ff-title);
     font-size: var(--fs-title-l);
     font-weight: var(--fw-bold);
@@ -44,14 +81,14 @@ legend{
 
 .input-wrapper,
 .select-wrapper,
-.textarea-wrapper{
+.textarea-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-input, 
-textarea, 
-select{
+input,
+textarea,
+select {
     background-color: var(--base-input);
 
     width: 80%;
@@ -65,7 +102,7 @@ select{
     font-size: var(--fs-text-s);
 }
 
-label{
+label {
     font: var(--ff-title);
     font-size: var(--fs-text-l);
     color: var(--base-title);
@@ -73,14 +110,15 @@ label{
 
 input:focus,
 select:focus,
-textarea:focus{
-    outline:.25rem solid var(--yellow-light);
+textarea:focus {
+    outline: .25rem solid var(--yellow-light);
     border: .125rem solid var(--yellow);
 
-    outline-offset: .1px;/*Border for Safari Browser*/
+    outline-offset: .1px;
+    /*Border for Safari Browser*/
 }
 
-.btn-wrapper{
+.btn-wrapper {
     width: 100%;
     padding: 3rem 0;
 
@@ -88,7 +126,7 @@ textarea:focus{
     align-items: flex-start;
 }
 
-button{
+button {
     background-color: var(--yellow);
 
     font-size: var(--fs-btn-g);
@@ -98,4 +136,88 @@ button{
     border-radius: 8px;
 
     cursor: pointer;
+}
+
+
+/* Tablet & below (up to 1024px) */
+@media (max-width: 1024px) {
+
+    /* header layout */
+    .header-wrapper {
+        align-items: center;
+        gap: 1.5rem;
+
+        padding-bottom: 1rem;
+    }
+
+    main {
+        width: 100vw;
+        padding: 0 1rem;
+    }
+
+    form {
+        width: 100%;
+        margin: 2rem 0;
+        padding: 2rem;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+    }
+
+    .btn-wrapper {
+        justify-content: center;
+    }
+}
+
+/* Mobile & below (up to 600px) */
+@media (max-width: 600px) {
+
+    /* header layout */
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        padding-bottom: 1rem;
+    }
+
+    main {
+        width: 100vw;
+        padding: 0;
+    }
+
+    form {
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+    }
+
+    fieldset {
+        gap: 1rem;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        font-size: var(--fs-text-m);
+    }
+
+    legend {
+        font-size: var(--fs-title-m);
+        text-align: center;
+    }
+
+    .btn-wrapper {
+        padding: 2rem 0 0;
+        justify-content: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
 }

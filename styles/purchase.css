@@ -1,3 +1,6 @@
+
+
+
 main{
     width: 75rem;
     margin: 0 auto;
@@ -296,25 +299,106 @@ input:focus{
 
 
 
-@media (max-width: 600px) {
-    .btn-hamburger { display: block; }
-    .header-call-to-action { display: none; }
-    
-    /* off-canvas menu */
-    .main-nav {
-      position: fixed;
-      top: 0; left: 0;
-      width: 75%;
-      max-width: 16rem;
-      height: 100vh;
-      background: var(--background);
-      transform: translateX(-100%);
-      transition: transform .3s ease;
-      /* …other styles… */
+/********** Responsive: Tablet **********/
+@media (max-width: 1024px) {
+    main{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
     }
-    /* when the .open class is added by JS */
-    .main-nav.open {
-      transform: translateX(0);
+    form{
+        width: 100%;
+        padding: 2rem;
     }
-  }
 
+    .checkout{
+        width: 100%;
+        align-items: center;
+    }
+    .checkout ul li{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .checkout-price{
+        width: 100%;
+        align-items: center;
+    }
+    .payment-method{
+        justify-content: center;
+    }
+    .tag-payment{ flex: 1 1 45%; }
+}
+
+/********** Responsive: Mobile **********/
+@media (max-width: 600px) {
+
+    main{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+    }
+    .container-form h2,
+    .checkout h2{
+        font-size: var(--fs-title-s);
+        text-align: center;
+    }
+    form{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .container-deliver-address{
+        flex-direction: column;
+        gap: .25rem;
+    }
+    fieldset{
+        gap: 1rem;
+    }
+    .flex{
+        flex-direction: column;
+    }
+  
+    .checkout ul li{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header-payment-method{
+        margin-bottom: .5rem;
+    }
+
+    .checkout-price{
+        width: 100%;
+        align-items: center;
+    }
+    .controls{
+         gap: 1rem; 
+         padding: .5rem 0; 
+
+        }
+    .btn-confirm-order button{ 
+        width: 12rem; 
+    }
+    .payment-method{
+        flex-direction: column;
+    }
+    .payment-method{
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container-payment-method{
+        padding: 2rem 0;
+    }
+    .tag-payment{ 
+        width: 10rem;
+        height: 4rem;
+
+        justify-content: center;
+    }
+}
