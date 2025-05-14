@@ -1,0 +1,37 @@
+## 1. **Open** `index.html` in your browser (double-click or right-click → “Open With…”).
+
+---
+
+## 2. Browsing & Cart Controls
+- Each coffee card has `–` and `+` icons to adjust quantity.
+- **minus**: decreases quantity (minimum 1)  
+- **plus**: increases quantity  
+- The displayed number updates immediately.
+
+---
+
+## 3. Adding to Cart & Checkout
+1. Click the **shopping cart** icon on the card.  
+2. Your chosen quantity and computed price (`qty × unit price`) are saved in your browser’s **Local Storage**.  
+3. You are redirected to **`purchase.html`**.
+
+---
+
+## 4. Checkout Page (`purchase.html`)
+- On page load, the app:
+1. Retrieves `coffeeQuantity` and `coffeePrice` from Local Storage.  
+2. Parses them cleanly (strips `AU$`, commas, spaces).  
+3. Displays:
+  - **Coffee Price** = your total coffee cost  
+  - **Delivery Fee** = read from the page’s DOM  
+  - **TOTAL** = Coffee Price + Delivery Fee  
+
+---
+
+## 5. Placing the Order
+- On `purchase.html`, click **“Place Order”**.  
+- You’ll be taken to **`order-placed.html`**, confirming your purchase.  
+- Local Storage is then cleared (cart resets).
+
+
+

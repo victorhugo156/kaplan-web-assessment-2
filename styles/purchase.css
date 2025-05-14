@@ -297,6 +297,12 @@ input:focus{
     border: 2px solid var(--purple);
 }
 
+footer {
+    background-color: var(--base-title);
+    height: 15rem;
+
+}
+
 
 
 /*--------------- Responsive: Tablet ------------*/

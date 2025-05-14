@@ -1,25 +1,25 @@
 
 // Function that will add header and footer into all pages through the data-attribute include
-async function includeHTML() {
-  const includes = document.querySelectorAll('[data-include]');
-  for (let el of includes) {
-    const url = el.getAttribute('data-include');
-    try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(res.statusText);
-      el.innerHTML = await res.text();
-    } catch (err) {
-      console.error(`Failed to include ${url}:`, err);
-    }
-  }
-}
-document.addEventListener('DOMContentLoaded', includeHTML);
+// async function includeHTML() {
+//   const includes = document.querySelectorAll('[data-include]');
+//   for (let el of includes) {
+//     const url = el.getAttribute('data-include');
+//     try {
+//       const res = await fetch(url);
+//       if (!res.ok) throw new Error(res.statusText);
+//       el.innerHTML = await res.text();
+//     } catch (err) {
+//       console.error(`Failed to include ${url}:`, err);
+//     }
+//   }
+// }
+// document.addEventListener('DOMContentLoaded', includeHTML);
 
 
 //When the page is loaded I will get all my controls elements
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-  await includeHTML();
+  // await includeHTML();
 
   const burger = document.querySelector('.btn-hamburger');
   const nav = document.querySelector('.main-nav');

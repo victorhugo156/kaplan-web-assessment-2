@@ -117,6 +117,15 @@ section.wrapper{
     font-weight: var(--fw-regular);
 }
 
+
+footer {
+  background-color: var(--base-title);
+  height: 15rem;
+
+}
+
+/*--------Responsive: Tablet------------------- */
+
 @media (max-width: 1024px) {
     section.wrapper {
       flex-direction: column;
